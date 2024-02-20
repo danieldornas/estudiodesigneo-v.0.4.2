@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento - Estúdio Designeo</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<header class="header-bg">
+    <div class="header" id="home">
+        <a href="./"><img class="logo" src="/img/icons/logo.svg" alt="Estúdio Designeo"></a>
+    </div>
+
+    <div class="orcamento-bg">
+        <div class="header-orcamento">
+            <h1>siga as etapas para fazer o seu orçamento<span>.</span></h1>
+            <ul>
+                <li class="item1">
+                    <span>01. Selecione seu perfil</span>
+                </li>
+                <li class="item2">
+                    <p>02. Selecione tipo de projeto</p>
+                </li>
+                <li class="item3">
+                    <p>03. Mais detalhes sobre o projeto</p>
+                </li>
+                <li class="item4">
+                    <p>04. Informações de contato</p>
+                </li>
+            </ul>
+        </div>
+        <script src="script.js"></script>
+    </div>
+
+</header>
+
+<body>
+
+    <form action="orcamento.php" method="post" autocomplete="on">
+        <div class="bg-form">
+
+            <div class="form-container">
+
+                <div class="form-perfil">
+                    <h1>
+                        <nav>01.</nav>ESSE PROJETO É PESSOAL OU PARA SUA EMPRESA?
+                    </h1>
+                    <div class="caixa-selecao">
+
+                        <input type="radio" id="lang-1" name="lang" value="HTML" class="radio">
+                        <label class="label label-1" for="lang-1">
+                            <img src="/img/icons/pessoal.svg" alt="Pessoal">
+                            <p>PESSOAL</p>
+                        </label>
+
+                        <input type="radio" id="lang-2" name="lang" value="HTML" class="radio">
+                        <label class="label label-2" for="lang-2">
+                            <img src="/img/icons/empresa.svg" alt="Pessoal">
+                            <p>EMPRESA</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-projeto">
+                    <h1>
+                        <nav>02.</nav>SELECIONE O TIPO DE PROJETO:
+                    </h1>
+
+                    <div class="caixas-checkbox1">
+
+                        <div class="idv-checkbox">
+                            <label class="idv-cb" for="idv">
+                                <img src="/img/icons/id-visual-branding.svg" width="20px" alt="">
+                                <a for="idv">Identidade visual e branding</a>
+                                <input type="checkbox" id="idv" value="idv" name="tipodeprojeto">
+                            </label>
+                        </div>
+
+                        <div class="papelaria-checkbox">
+                            <label for="papelaria">
+                                <img src="/img/icons/papelaria.svg" width="20px" alt="">
+                                <a for="">Papelaria e material gráfico</a>
+                                <input type="checkbox" id="papelaria" value="papelaria" name="tipodeprojeto">
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="caixas-checkbox2">
+
+                        <div class="social-checkbox">
+                            <label for="social">
+                                <img src="/img/icons/social-media.svg" width="20px" alt="">
+                                <a for="social">Identidade visual e branding</a>
+                                <input type="checkbox" id="social" value="social" name="tipodeprojeto">
+                            </label>
+                        </div>
+
+                        <div class="website-checkbox">
+                            <label for="website">
+                                <img src="/img/icons/website.svg" width="20px" alt="">
+                                <a for="">projeto de website</a>
+                                <input type="checkbox" id="website" value="website" name="tipodeprojeto">
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-detalhes">
+                    <h1>
+                        <nav>03.</nav>VAMOS DETALHAR, SELECIONE OS ITENS QUE DESEJA:
+                    </h1>
+
+                    <div class="form-idvisual">
+                        <div class="id-visual-barra">
+                            <img src="/img/icons/id-visual-branding.svg" alt="Identidade Visual">
+                            <p>Identidade Visual e Branding</p>
+                        </div>
+
+                        <h4>Você já tem um logotipo?</h4>
+
+                        <label for="tem-logo">
+                            <input type="radio" id="tem-logo" value="tem-logo" name="perfil">
+                            <a for="tem-logo">Já tenho logotipo e quero renová-lo.</a>
+                        </label>
+
+                        <label for="nao-tem-logo">
+                            <input type="radio" id="nao-tem-logo" value="nao-tem-logo" name="perfil">
+                            Ainda não tenho logotipo e gostaria de solicitar uma proposta
+                        </label>
+
+                    </div>
+
+                    <div class="divisao">
+                        <div class="form-extra">
+                            <span>*O manual da marca já está incluso no projeto.</span>
+                            <a href="/Briefing.docx">
+                                <img src="/img/icons/file.svg" alt="">Baixe o briefing aqui.
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-papelaria">
+                        <div class="papelaria-barra">
+                            <img src="/img/icons/papelaria.svg" alt="Papelaria">
+                            <p>Papelaria e material gráfico</p>
+                        </div>
+
+                        <h4>Selecione os itens que você deseja:</h4>
+
+                        <div class="lista-checkbox">
+                            <ul class="lista">
+                                <li><label for="cartaodevisita"><input type="checkbox" name="cartaodevisita"
+                                            id="cartaodevisita">Cartão de visita
+                                </li></label>
+                                <li><label for="cracha"><input type="checkbox" name="cracha" id="cracha">Crachá</li>
+                                </label>
+                                <li><label for="papeltimbrado"><input type="checkbox" name="papeltimbrado"
+                                            id="papeltimbrado">Papel
+                                        timbrado</li>
+                                <li><label for="cartaofidelidade"><input type="checkbox" name="cartaofidelidade"
+                                            id="cartaofidelidade">Cartão
+                                        fidelidade</li>
+                                <li><label for="cartaz"><input type="checkbox" name="cartaz" id="cartaz">Cartaz/ Pôster
+                                </li>
+                                </label>
+                            </ul>
+
+                            <ul class="lista">
+                                <li><label for="banner"><input type="checkbox" name="banner" id="banner">Banner
+                                </li></label>
+                                <li><label for="outdoor"><input type="checkbox" name="outdoor" id="outdoor">Outdoor</li>
+                                </label>
+                                <li><label for="fachada"><input type="checkbox" name="fachada" id="fachada">Fachada</li>
+                                </label>
+                                <li><label for="flyer"><input type="checkbox" name="flyer" id="flyer">Flyer</li></label>
+                                <li><label for="folder"><input type="checkbox" name="folder" id="folder">Folder</li>
+                                </label>
+                            </ul>
+
+                            <ul class="lista">
+                                <li><label for="apresentacao"><input type="checkbox" name="apresentacao"
+                                            id="apresentacao">Apresentação</li></label>
+                                <li><label for="adesivo"><input type="checkbox" name="adesivo" id="adesivo">Adesivo</li>
+                                </label>
+                                <li><label for="embalagem"><input type="checkbox" name="embalagem"
+                                            id="embalagem">Embalagem</li>
+                                </label>
+                                <li><label for="calendario"><input type="checkbox" name="calendario"
+                                            id="calendario">Calendário
+                                </li></label>
+                                <li><label for="catalogo"><input type="checkbox" name="catalogo" id="catalogo">Catálogo
+                                </li>
+                                </label>
+                            </ul>
+
+                            <div class="input-single info-adc1">
+                                <input type="text" class="input" id="info-adc1" required>
+                                <label for="info-adc1">
+                                    <a>Deseja solicitar algum outro serviço? Informe aqui.</a>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="form-socialmedia">
+                            <div class="socialmedia-barra">
+                                <img src="/img/icons/social-media.svg" alt="Redes Sociais">
+                                <p>Redes sociais</p>
+                            </div>
+
+                            <div class="title-social">
+
+                                <div class="info-acima">
+                                    <h4>Para redes sociais, você pode fechar por peça avulsa ou por pacote mensal. Veja
+                                        abaixo qual sua necessidade e nos informe.</h4>
+                                    <p>Qual a frequência para a criação das peças?</p>
+                                </div>
+
+                                <div class="social-input">
+
+                                    <div class="pct-avulso">
+                                        <input type="radio" name="pacote" value="avulso" id="avulso">
+                                        <label for="avulso">Pacote avulso<span>1 vez
+                                            </span><br>
+                                            <hr>
+                                            <p>Caso você queira fazer apenas algumas<br>peças para redes
+                                                sociais,
+                                                esta é
+                                                a opção.</p>
+                                        </label>
+                                    </div>
+
+                                    <div class="pct-trimestral">
+                                        <input type="radio" name="pacote" value="trimestral" id="trimestral">
+                                        <label for="trimestral">Pacote trimestral<span>3 meses</span></label><br>
+                                        <hr>
+                                        <p>Se você deseja fechar um pacote com<br>número de peças já definidas
+                                            por<br>semana,
+                                            ou mês, esta é a opção ideal.</p>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="info-abaixo">
+                                    <p>Obs.: Peças para redes sociais são:</p><span> Capa para fanpage, linkedin,
+                                        youtube, twitter, posts para facebook e instagram, miniatura para vídeos do
+                                        youtube...</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-web">
+                            <div class="web-barra">
+                                <img src="/img/icons/website.svg" alt="Website">
+                                <p>Projeto de website</p>
+                            </div>
+
+                            <div class="title-web">
+                                <h4>Nessa seção nós vamos definir alguns pontos básicos pra termos uma noção do
+                                    tamanho
+                                    do
+                                    projeto. Então você pode marcar os itens e explicar se necessário.</h4>
+                            </div>
+
+                            <div class="input-web">
+                                <h5>Antes de começar, que tipo de projeto será?</h5>
+                                <input type="radio" id="landing" value="landing" name="perfil">
+                                <label for="landing">Uma landing page (Página única)</label>
+
+                                <label for="multiplas-pag">
+                                    <input type="radio" id="multiplas-pag" value="multiplas-pag" name="perfil">
+                                    <a for="multiplas-pag">Múltiplas Páginas (Um site com páginas internas)</a>
+                                </label>
+
+                            </div>
+
+                            <h4>Agora vamos precisar ter uma base do conteúdo do site. Selecione as páginas ou seções
+                                que o seu site terá.</h4>
+
+                            <div class="lista-checkbox">
+                                <ul class="lista">
+                                    <li><label for="ihome"><input type="checkbox" name="ihome" id="ihome">Home
+                                    </li></label>
+                                    <li><label for="empresa"><input type="checkbox" name="empresa" id="empresa">Empresa
+                                    </li></label>
+                                    <li><label for="artigos"><input type="checkbox" name="artigos" id="artigos">Artigos
+                                    </li></label>
+                                    </li>
+
+                                </ul>
+
+                                <ul class="lista">
+                                    <li><label for="galeria-img"><input type="checkbox" name="galeria-img"
+                                                id="galeria-img">Galeria de imagens
+                                    </li></label>
+                                    <li><label for="galeria-vid"><input type="checkbox" name="galeria-vid"
+                                                id="galeria-vid">Galeria de vídeos
+                                    </li></label>
+                                    <li><label for="politica"><input type="checkbox" name="politica"
+                                                id="politica">Política de privacidade
+                                </ul></label>
+
+                                <ul class="lista">
+                                    <li><label for="eventos"><input type="checkbox" name="eventos" id="eventos">Eventos
+                                    </li></label>
+                                    <li><label for="contrato"><input type="checkbox" name="contrato"
+                                                id="contrato">Contrato</li></label>
+                                    <li><label for="trabalhe"><input type="checkbox" name="trabalhe"
+                                                id="trabalhe">Trabalhe conosco</li></label>
+                                </ul>
+
+                                <div class="input-single info-adc2">
+                                    <input type="text" class="input" id="info-adc2" required>
+                                    <label for="info-adc2"><a>Você sentiu falta de alguma seção/página e gostaria de
+                                            acrescentar? Informe aqui.</a>
+                                    </label>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-contato">
+
+                    <h1>
+                        <nav>04.</nav>INFORME SEUS DADOS DE CONTATO:
+                    </h1>
+
+                    <div class="caixas-cont1">
+
+                        <div class="input-group nome-cont">
+                            <input type="text" class="caixa-contato">
+                            <label class="placeholder">Nome</label>
+                        </div>
+
+                        <div class="input-group cont-cont">
+                            <input type="text" class="caixa-contato">
+                            <label class="placeholder">E-mail</label>
+                        </div>
+
+                    </div>
+
+                    <div class="caixas-cont2">
+
+                        <div class="input-group marca-cont">
+                            <input type="text" class="caixa-contato">
+                            <label class="placeholder">Empresa/ Marca</label>
+                        </div>
+
+                        <div class="input-group wpp-cont">
+                            <input type="text" class="caixa-contato">
+                            <label class="placeholder">Whatsapp</label>
+                        </div>
+
+                    </div>
+
+                    <div class="input-group infos">
+                        <input type="text" class="caixa-contato">
+                        <label class="placeholder">Informações adicionais</label>
+                    </div>
+
+                    <div class="bt-submit">
+
+                        <label for="arq"><img src="/img/icons/clip.svg" alt="clip" height="30px">Anexar
+                            arquivos
+                            <input type="file" id="arq" name="arquivo"> </label>
+
+                        <label for="prop"><img src="/img/icons/enviar.svg" alt="clip" height="30px">Solicitar
+                            proposta
+                            <input type="submit" id="prop" name="proposta"> </label>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        </div>
+
+        </div>
+
+
+        </div>
+
+    </form>
+
+
+</body>
+
+<footer class="footer-bg">
+    <div class="footer container">
+        <img src="/img/icons/logo.svg" class="logo-footer" alt="Estúdio Designeo">
+        <div class="footer-contato">
+            <h3>Contato</h3>
+            <ul>
+                <li><a href="tel:+5524981254849">+55 (24)981254849</a></li>
+                <li><a href="mailto:daniel.melodornas@outlook.com" class="mail">daniel.melodornas@outlook.com</a>
+                </li>
+                <li>
+                    <p class="endereco">Rio de Janeiro - RJ - Brasil</p>
+                </li>
+            </ul>
+            <div class="footer-redes">
+                <img src="/img/icons/instagram.svg" alt="Instagram" id="insta">
+                <script>
+                    document.getElementById('insta').addEventListener('click', function () {
+                        window.open('https://www.instagram.com/estudiodesigneo', '_blank');
+                    });
+                </script>
+
+                <img src="/img/icons/behance.svg" alt="Behance" class="behance" id="beh">
+
+                <script>
+                    document.getElementById('beh').addEventListener('click', function () {
+                        window.open('https://www.behance.net/danieldornas', '_blank');
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="footer-informacoes">
+            <h3 class="">Informações</h3>
+            <nav>
+                <ul class="lista-info">
+                    <li><a href="/index.html" id="home">Home</a></li>
+                    <li><a href="#servicos" id="servicos">Serviços</a></li>
+                    <li><a href="#projetos" id="projetos">Projetos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer-final">
+    <p class="footer-copy">Estúdio Designeo © 2024 - Todos os direitos reservados.</p>
+</footer>
+
+</html>
